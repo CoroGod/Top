@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web TOP - Información</title>
+    <link rel="stylesheet" href="..\style.css">
+    <script src="..\script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="..\Imagenes/minilogo-removebg-preview.png" alt="Logo pequeño" class="logo-small"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Información y Sponsors</a></li>
+                    <li><a href="softwareYtiendas.html">Software y Tiendas</a></li>
+                    <li><a href="presupuesto.html">PC Presupuesto</a></li>
+                    <li><a href="comunidad.html">Comunidad</a></li>
+                </ul>
+            </nav>
+            <div class="register">
+                <a href="#" onclick="return false;">Registrarse</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="budget">
+        <h2>PC Presupuesto</h2>
+        <div class="button-container">
+            <button id="button1">de Oficina</button>
+            <button id="button2">Gama Baja</button>
+            <button id="button3">Gama Media</button>
+            <button id="button4">Gama Alta</button>
+            <button id="button5">Master Race</button>
+        </div>
+
+        <div id="image-container">
+            <!-- Aquí se agregarán dinámicamente las imágenes y nombres -->
+        </div>
+        <div class="total-price" id="total-price">
+            Precio total aproximado: <span id="total-price-value">0</span> soles
+        </div>
+        <div class="custom-message" id="custom-message">
+            SELECCIONE UN BOTÓN PARA VER LOS COMPONENTES, PRECIOS E INFORMACIÓN AL RESPECTO
+        </div>
+        </section>
+
+        
+        <section id="custom-budget">
+            <h2>Personaliza tu PC</h2>
+            <form id="custom-form">
+                <label for="case-select">Case:</label>
+                <select id="case-select"></select>
+                <label for="psu-select">Fuente de Energía:</label>
+                <select id="psu-select"></select>
+                <label for="motherboard-select">Placa Madre:</label>
+                <select id="motherboard-select"></select>
+                <label for="cpu-select">Procesador:</label>
+                <select id="cpu-select"></select>
+                <label for="gpu-select">Tarjeta de Video:</label>
+                <select id="gpu-select"></select>
+                <label for="ram-select">RAM:</label>
+                <select id="ram-select"></select>
+                <label for="storage-select">Almacenamiento:</label>
+                <select id="storage-select"></select>
+                <label for="cooler-select">Refrigerador CPU (opcional):</label>
+                <select id="cooler-select"></select>
+                <div class="total-price" id="custom-total-price">
+                    Precio total personalizado: <span id="custom-total-price-value">0</span> soles
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+        <p>&copy; Contactos: jhonathan.danny.06@gmail.com</p>
+        <p>&copy; Celular: +51 951 490 227</p>
+    </footer>
+</body>
+</html>
